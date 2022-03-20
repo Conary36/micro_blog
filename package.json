@@ -1,0 +1,14 @@
+{
+  "name": "micro_blog",
+  "version": "1.0.0",
+  "description": "sample micro services app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "conary",
+  "license": "ISC",
+  "dependencies": {
+    "create-react-app": "^5.0.0"
+  }
+}
