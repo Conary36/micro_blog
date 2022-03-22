@@ -8,7 +8,10 @@ app.use(bodyParser.json());
 
 const commentsByPostId = {}; // Key with value of an array of comments
 
-app.get("/posts/:id/comments", (req, res) => {});
+app.get("/posts/:id/comments", (req, res) => {
+    res.send(commentsByPostId[req.params.id] || []);
+    
+});
 
 app.post("/posts/:id/comments", (req, res) => {
   const commentId = randomBytes(4).toString("hex");
