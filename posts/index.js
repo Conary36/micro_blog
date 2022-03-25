@@ -1,10 +1,13 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const { randomBytes } = require('crypto');// Used to generate random id's
+const cors = require('cors');
+
 
 const app = express();
-
 app.use(bodyParser.json());
+app.use(cors());
+
 
 const posts = {};//where we will store posts locally
 
